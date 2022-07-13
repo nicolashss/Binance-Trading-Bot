@@ -1,3 +1,12 @@
+# -------------------------
+
+# Author: Doom & Oji Wolf
+# Github : https://github.com/nicolashss/TradingBOT
+# Website : https://xlux.xyz/
+
+# -------------------------
+
+
 from colorama import Fore, Back, Style
 from pprint import pprint
 
