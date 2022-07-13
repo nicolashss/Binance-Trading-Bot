@@ -404,12 +404,9 @@ if __name__ == "__main__":
 
     BoolToPlaceSL_TP = False
 
-    while True :
-    
-        
+    while True:
 
-
-        DataCrypto = get_data_frame(client_binance, pair, '1 day ago UTC', '1m')  
+        DataCrypto = get_data_frame(client_binance, pair, '1 day ago UTC', '1m')
 
         DataCrypto = HA(DataCrypto)
         BBMC, color_bar, arrow = SSL_Custom(DataCrypto)
@@ -825,4 +822,3 @@ if __name__ == "__main__":
                 
         LastDate = DataCrypto['date'][i]
         time.sleep(1)
-                    
