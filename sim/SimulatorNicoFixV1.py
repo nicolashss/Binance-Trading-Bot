@@ -39,6 +39,12 @@ print('-------------------------------')
 
 print('\n')
 
+def slowprint(s):
+  for c in s + '\n':
+    sys.stdout.write(c)
+    sys.stdout.flush()
+    time.sleep(1./10)
+
 def ui():
 
     print('Welcome to this software... - By LuX & Doom')
@@ -108,7 +114,13 @@ def main():
     for i in range(len(acc_balance)) :
         if acc_balance[i]['asset'] == 'USDT':
 
-            print(acc_balance[i]['balance'])
+            print("Votre balance actuel: " + str(acc_balance[i]['balance'] + " USDT"))
+
+            time.sleep(0.4)
+
+            print('Chargement des libreries...')
+
+            time.sleep(10)
 
 if __name__ == "__main__":
     main()
