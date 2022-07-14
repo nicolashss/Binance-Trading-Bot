@@ -127,7 +127,8 @@ def getUSDTBalanceSTR():
 def get_API():
 
     try:
-        yaml_file = open("./api.yaml", 'r')
+        yaml_file = open("api.yaml", 'r')
+
     except:
         print(Fore.RED + "[ERREUR] :")
         print(Fore.WHITE + "Le fichier api.yaml n'existe pas ou n'est pas au bon endroit")
