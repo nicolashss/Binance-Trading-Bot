@@ -133,14 +133,9 @@ def get_API():
         print(Fore.RED + "[ERREUR] :")
         print(Fore.WHITE + "Le fichier api.yaml n'existe pas ou n'est pas au bon endroit")
         os.execv(sys.executable, [sys.executable, __file__] + sys.argv)
-    
-    
 
     yaml_content = yaml.safe_load(yaml_file)
     return yaml_content
-
-
-
 
 def handle_TELEGRAM_COMMAND(msg):
     
