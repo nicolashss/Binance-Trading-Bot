@@ -164,7 +164,7 @@ def psar(barsdata, iaf = 0.02, maxaf = 0.2):
 if __name__ == "__main__":
 
 
-    client_binance = Client('4q7mDe95omSd3cYF75e32sNWEG6zaHSdLzYFluMtu5UgCw7q10GIzWpbGWRLeYgy', 'BvW60opKnv1jiq4utKoy6xOs69c4xpcImIytb7vkXzfDaqpBDxKbOGynKl8O3q71')
+    client_binance = Client('', '')
     
 
     DataCrypto = get_data_frame(client_binance, 'BUSDT', '4 month ago',  '5m') #WOOUSDT #UNFIUSDT #UNIUSDT #TOMOUSDT
